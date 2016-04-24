@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011670841CCC84E700AE995E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670831CCC84E700AE995E /* AppDelegate.swift */; };
+		011670861CCC84E700AE995E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670851CCC84E700AE995E /* ViewController.swift */; };
+		011670891CCC84E700AE995E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011670871CCC84E700AE995E /* Main.storyboard */; };
+		0116708B1CCC84E700AE995E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0116708A1CCC84E700AE995E /* Assets.xcassets */; };
+		0116708E1CCC84E700AE995E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0116708C1CCC84E700AE995E /* LaunchScreen.storyboard */; };
+		011670991CCC84E800AE995E /* Master_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670981CCC84E800AE995E /* Master_RemoteTests.swift */; };
+		011670A41CCC84E800AE995E /* Master_RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670A31CCC84E800AE995E /* Master_RemoteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		011670951CCC84E800AE995E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011670781CCC84E700AE995E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0116707F1CCC84E700AE995E;
+			remoteInfo = "Master Remote";
+		};
+		011670A01CCC84E800AE995E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011670781CCC84E700AE995E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0116707F1CCC84E700AE995E;
+			remoteInfo = "Master Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011670801CCC84E700AE995E /* Master Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011670831CCC84E700AE995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		011670851CCC84E700AE995E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		011670881CCC84E700AE995E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0116708A1CCC84E700AE995E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0116708D1CCC84E700AE995E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0116708F1CCC84E700AE995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011670941CCC84E800AE995E /* Master RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Master RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011670981CCC84E800AE995E /* Master_RemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master_RemoteTests.swift; sourceTree = "<group>"; };
+		0116709A1CCC84E800AE995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0116709F1CCC84E800AE995E /* Master RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Master RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011670A31CCC84E800AE995E /* Master_RemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master_RemoteUITests.swift; sourceTree = "<group>"; };
+		011670A51CCC84E800AE995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0116707D1CCC84E700AE995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011670911CCC84E800AE995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0116709C1CCC84E800AE995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011670771CCC84E700AE995E = {
+			isa = PBXGroup;
+			children = (
+				011670821CCC84E700AE995E /* Master Remote */,
+				011670971CCC84E800AE995E /* Master RemoteTests */,
+				011670A21CCC84E800AE995E /* Master RemoteUITests */,
+				011670811CCC84E700AE995E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		011670811CCC84E700AE995E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011670801CCC84E700AE995E /* Master Remote.app */,
+				011670941CCC84E800AE995E /* Master RemoteTests.xctest */,
+				0116709F1CCC84E800AE995E /* Master RemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011670821CCC84E700AE995E /* Master Remote */ = {
+			isa = PBXGroup;
+			children = (
+				011670831CCC84E700AE995E /* AppDelegate.swift */,
+				011670851CCC84E700AE995E /* ViewController.swift */,
+				011670871CCC84E700AE995E /* Main.storyboard */,
+				0116708A1CCC84E700AE995E /* Assets.xcassets */,
+				0116708C1CCC84E700AE995E /* LaunchScreen.storyboard */,
+				0116708F1CCC84E700AE995E /* Info.plist */,
+			);
+			path = "Master Remote";
+			sourceTree = "<group>";
+		};
+		011670971CCC84E800AE995E /* Master RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				011670981CCC84E800AE995E /* Master_RemoteTests.swift */,
+				0116709A1CCC84E800AE995E /* Info.plist */,
+			);
+			path = "Master RemoteTests";
+			sourceTree = "<group>";
+		};
+		011670A21CCC84E800AE995E /* Master RemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				011670A31CCC84E800AE995E /* Master_RemoteUITests.swift */,
+				011670A51CCC84E800AE995E /* Info.plist */,
+			);
+			path = "Master RemoteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0116707F1CCC84E700AE995E /* Master Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011670A81CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master Remote" */;
+			buildPhases = (
+				0116707C1CCC84E700AE995E /* Sources */,
+				0116707D1CCC84E700AE995E /* Frameworks */,
+				0116707E1CCC84E700AE995E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Master Remote";
+			productName = "Master Remote";
+			productReference = 011670801CCC84E700AE995E /* Master Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		011670931CCC84E800AE995E /* Master RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011670AB1CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master RemoteTests" */;
+			buildPhases = (
+				011670901CCC84E800AE995E /* Sources */,
+				011670911CCC84E800AE995E /* Frameworks */,
+				011670921CCC84E800AE995E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011670961CCC84E800AE995E /* PBXTargetDependency */,
+			);
+			name = "Master RemoteTests";
+			productName = "Master RemoteTests";
+			productReference = 011670941CCC84E800AE995E /* Master RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0116709E1CCC84E800AE995E /* Master RemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011670AE1CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master RemoteUITests" */;
+			buildPhases = (
+				0116709B1CCC84E800AE995E /* Sources */,
+				0116709C1CCC84E800AE995E /* Frameworks */,
+				0116709D1CCC84E800AE995E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011670A11CCC84E800AE995E /* PBXTargetDependency */,
+			);
+			name = "Master RemoteUITests";
+			productName = "Master RemoteUITests";
+			productReference = 0116709F1CCC84E800AE995E /* Master RemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011670781CCC84E700AE995E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Brock Whittaker";
+				TargetAttributes = {
+					0116707F1CCC84E700AE995E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					011670931CCC84E800AE995E = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 0116707F1CCC84E700AE995E;
+					};
+					0116709E1CCC84E800AE995E = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 0116707F1CCC84E700AE995E;
+					};
+				};
+			};
+			buildConfigurationList = 0116707B1CCC84E700AE995E /* Build configuration list for PBXProject "Master Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 011670771CCC84E700AE995E;
+			productRefGroup = 011670811CCC84E700AE995E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0116707F1CCC84E700AE995E /* Master Remote */,
+				011670931CCC84E800AE995E /* Master RemoteTests */,
+				0116709E1CCC84E800AE995E /* Master RemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0116707E1CCC84E700AE995E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0116708E1CCC84E700AE995E /* LaunchScreen.storyboard in Resources */,
+				0116708B1CCC84E700AE995E /* Assets.xcassets in Resources */,
+				011670891CCC84E700AE995E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011670921CCC84E800AE995E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0116709D1CCC84E800AE995E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0116707C1CCC84E700AE995E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011670861CCC84E700AE995E /* ViewController.swift in Sources */,
+				011670841CCC84E700AE995E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011670901CCC84E800AE995E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011670991CCC84E800AE995E /* Master_RemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0116709B1CCC84E800AE995E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011670A41CCC84E800AE995E /* Master_RemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		011670961CCC84E800AE995E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0116707F1CCC84E700AE995E /* Master Remote */;
+			targetProxy = 011670951CCC84E800AE995E /* PBXContainerItemProxy */;
+		};
+		011670A11CCC84E800AE995E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0116707F1CCC84E700AE995E /* Master Remote */;
+			targetProxy = 011670A01CCC84E800AE995E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		011670871CCC84E700AE995E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011670881CCC84E700AE995E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0116708C1CCC84E700AE995E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0116708D1CCC84E700AE995E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011670A61CCC84E800AE995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		011670A71CCC84E800AE995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011670A91CCC84E800AE995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Master Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		011670AA1CCC84E800AE995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Master Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		011670AC1CCC84E800AE995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Master RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Master Remote.app/Master Remote";
+			};
+			name = Debug;
+		};
+		011670AD1CCC84E800AE995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Master RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Master Remote.app/Master Remote";
+			};
+			name = Release;
+		};
+		011670AF1CCC84E800AE995E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Master RemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Master Remote";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		011670B01CCC84E800AE995E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Master RemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Master Remote";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0116707B1CCC84E700AE995E /* Build configuration list for PBXProject "Master Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011670A61CCC84E800AE995E /* Debug */,
+				011670A71CCC84E800AE995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011670A81CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011670A91CCC84E800AE995E /* Debug */,
+				011670AA1CCC84E800AE995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011670AB1CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011670AC1CCC84E800AE995E /* Debug */,
+				011670AD1CCC84E800AE995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011670AE1CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master RemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011670AF1CCC84E800AE995E /* Debug */,
+				011670B01CCC84E800AE995E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011670781CCC84E700AE995E /* Project object */;
+}
