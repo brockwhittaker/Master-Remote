@@ -14,6 +14,11 @@
 		0116708E1CCC84E700AE995E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0116708C1CCC84E700AE995E /* LaunchScreen.storyboard */; };
 		011670991CCC84E800AE995E /* Master_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670981CCC84E800AE995E /* Master_RemoteTests.swift */; };
 		011670A41CCC84E800AE995E /* Master_RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670A31CCC84E800AE995E /* Master_RemoteUITests.swift */; };
+		011670B21CCC871C00AE995E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670B11CCC871C00AE995E /* Login.swift */; };
+		011671391CCCB0B400AE995E /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011671381CCCB0B400AE995E /* HTTP.swift */; };
+		0116713B1CCCB86800AE995E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116713A1CCCB86800AE995E /* main.swift */; };
+		778CCC25A949C319A42F89D8 /* Pods_Master_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CC06BB98F2F843A3319A74 /* Pods_Master_Remote.framework */; };
+		EE90289B00D81328A64BFD10 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5537D5E7C54FBE258ABCE3F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		011670D01CCC979E00AE995E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		011670801CCC84E700AE995E /* Master Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		011670831CCC84E700AE995E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +65,13 @@
 		0116709F1CCC84E800AE995E /* Master RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Master RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		011670A31CCC84E800AE995E /* Master_RemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master_RemoteUITests.swift; sourceTree = "<group>"; };
 		011670A51CCC84E800AE995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011670B11CCC871C00AE995E /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		011671381CCCB0B400AE995E /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		0116713A1CCCB86800AE995E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5D4993751370D424CFFF088C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9A560FD76DA62150F6A9AC39 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B2CC06BB98F2F843A3319A74 /* Pods_Master_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Master_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5537D5E7C54FBE258ABCE3F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE90289B00D81328A64BFD10 /* Pods.framework in Frameworks */,
+				778CCC25A949C319A42F89D8 /* Pods_Master_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,8 @@
 				011670971CCC84E800AE995E /* Master RemoteTests */,
 				011670A21CCC84E800AE995E /* Master RemoteUITests */,
 				011670811CCC84E700AE995E /* Products */,
+				5EFFAA8F54CF4D17B4169A9A /* Pods */,
+				13BC233E1826F2C2A04ED0D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,9 @@
 				0116708A1CCC84E700AE995E /* Assets.xcassets */,
 				0116708C1CCC84E700AE995E /* LaunchScreen.storyboard */,
 				0116708F1CCC84E700AE995E /* Info.plist */,
+				011670B11CCC871C00AE995E /* Login.swift */,
+				011671381CCCB0B400AE995E /* HTTP.swift */,
+				0116713A1CCCB86800AE995E /* main.swift */,
 			);
 			path = "Master Remote";
 			sourceTree = "<group>";
@@ -125,6 +157,24 @@
 			path = "Master RemoteUITests";
 			sourceTree = "<group>";
 		};
+		13BC233E1826F2C2A04ED0D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5537D5E7C54FBE258ABCE3F /* Pods.framework */,
+				B2CC06BB98F2F843A3319A74 /* Pods_Master_Remote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EFFAA8F54CF4D17B4169A9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D4993751370D424CFFF088C /* Pods.debug.xcconfig */,
+				9A560FD76DA62150F6A9AC39 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +182,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 011670A81CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master Remote" */;
 			buildPhases = (
+				030FD7FE25659170F4CE6A03 /* Check Pods Manifest.lock */,
 				0116707C1CCC84E700AE995E /* Sources */,
 				0116707D1CCC84E700AE995E /* Frameworks */,
 				0116707E1CCC84E700AE995E /* Resources */,
+				011670D01CCC979E00AE995E /* Embed Frameworks */,
+				1A762A09EE049FE70FC0A409 /* Embed Pods Frameworks */,
+				6728700A56DC98E066994D6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +247,11 @@
 				TargetAttributes = {
 					0116707F1CCC84E700AE995E = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					011670931CCC84E800AE995E = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -251,11 +310,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030FD7FE25659170F4CE6A03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1A762A09EE049FE70FC0A409 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Master Remote/Pods-Master Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6728700A56DC98E066994D6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0116707C1CCC84E700AE995E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011670B21CCC871C00AE995E /* Login.swift in Sources */,
+				0116713B1CCCB86800AE995E /* main.swift in Sources */,
+				011671391CCCB0B400AE995E /* HTTP.swift in Sources */,
 				011670861CCC84E700AE995E /* ViewController.swift in Sources */,
 				011670841CCC84E700AE995E /* AppDelegate.swift in Sources */,
 			);
@@ -397,8 +507,10 @@
 		};
 		011670A91CCC84E800AE995E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4993751370D424CFFF088C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Master Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-Remote";
@@ -408,8 +520,10 @@
 		};
 		011670AA1CCC84E800AE995E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A560FD76DA62150F6A9AC39 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Master Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lavancier.Master-Remote";
@@ -484,6 +598,7 @@
 				011670AA1CCC84E800AE995E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		011670AB1CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master RemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +607,7 @@
 				011670AD1CCC84E800AE995E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		011670AE1CCC84E800AE995E /* Build configuration list for PBXNativeTarget "Master RemoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +616,7 @@
 				011670B01CCC84E800AE995E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

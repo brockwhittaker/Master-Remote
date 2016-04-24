@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Master Remote.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Master RemoteTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Master RemoteUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftHTTP.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>063091A3F7F624109B45C4BB68E254B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>370D8B09F00B97515CD21C7F705FB20C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C8B059E7AC8E798149B043825B1009E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>732F2977D3B3731782D7932850ACC2D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFE6ABAE8A06460D25EFCBF780FD0A33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

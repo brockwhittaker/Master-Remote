@@ -1,0 +1,6 @@
+framework module Pods_Master_RemoteUITests {
+  umbrella header "Pods-Master RemoteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
