@@ -16,7 +16,7 @@
 		011670A41CCC84E800AE995E /* Master_RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670A31CCC84E800AE995E /* Master_RemoteUITests.swift */; };
 		011670B21CCC871C00AE995E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011670B11CCC871C00AE995E /* Login.swift */; };
 		011671391CCCB0B400AE995E /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011671381CCCB0B400AE995E /* HTTP.swift */; };
-		0116713B1CCCB86800AE995E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116713A1CCCB86800AE995E /* main.swift */; };
+		0168DA7A1CD1A70C00ECF66F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168DA791CD1A70C00ECF66F /* SignUpViewController.swift */; };
 		778CCC25A949C319A42F89D8 /* Pods_Master_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CC06BB98F2F843A3319A74 /* Pods_Master_Remote.framework */; };
 		EE90289B00D81328A64BFD10 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5537D5E7C54FBE258ABCE3F /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -67,7 +67,7 @@
 		011670A51CCC84E800AE995E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		011670B11CCC871C00AE995E /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		011671381CCCB0B400AE995E /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
-		0116713A1CCCB86800AE995E /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0168DA791CD1A70C00ECF66F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5D4993751370D424CFFF088C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9A560FD76DA62150F6A9AC39 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B2CC06BB98F2F843A3319A74 /* Pods_Master_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Master_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,12 +129,12 @@
 				011670831CCC84E700AE995E /* AppDelegate.swift */,
 				011670851CCC84E700AE995E /* ViewController.swift */,
 				011670871CCC84E700AE995E /* Main.storyboard */,
+				0168DA791CD1A70C00ECF66F /* SignUpViewController.swift */,
 				0116708A1CCC84E700AE995E /* Assets.xcassets */,
 				0116708C1CCC84E700AE995E /* LaunchScreen.storyboard */,
 				0116708F1CCC84E700AE995E /* Info.plist */,
 				011670B11CCC871C00AE995E /* Login.swift */,
 				011671381CCCB0B400AE995E /* HTTP.swift */,
-				0116713A1CCCB86800AE995E /* main.swift */,
 			);
 			path = "Master Remote";
 			sourceTree = "<group>";
@@ -364,10 +364,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				011670B21CCC871C00AE995E /* Login.swift in Sources */,
-				0116713B1CCCB86800AE995E /* main.swift in Sources */,
 				011671391CCCB0B400AE995E /* HTTP.swift in Sources */,
 				011670861CCC84E700AE995E /* ViewController.swift in Sources */,
 				011670841CCC84E700AE995E /* AppDelegate.swift in Sources */,
+				0168DA7A1CD1A70C00ECF66F /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

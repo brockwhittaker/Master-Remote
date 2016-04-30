@@ -9,26 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var login = Login()
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
-    @IBAction func submitButton(sender: UIButton) {
-        print(username.text)
-        print(password.text)
+    @IBOutlet weak var successMessage: UILabel!
+    
+    @IBAction func submitButton(sender: AnyObject) {
+        login.setUsername(username.text!);
+        login.setPassword(password.text!);
+        
+        self.login.sendCredentials({ (data, error) in
+            dispatch_async(dispatch_get_main_queue(), {
+                let res = JSON().parse(data)
+                print(res)
+                if (res != nil) {
+                    self.successMessage.text = "You successfully signed up!"
+                } else {
+                    self.successMessage.text = "Uh oh. Either the username or password is incorrect."
+                }
+            })
+        })
+
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let login = Login()
         
-        login.setUsername("brockwhittaker")
-        login.getUsername()
-
+        /*
+        let http = HTTP(url: "http://www.lavancier.com/")
         
-        HTTPGet("http://www.lavancier.com") {
+        http.get({
             (data: String, error: String?) -> Void in
             if error != nil {
                 print(error)
@@ -36,10 +51,12 @@ class ViewController: UIViewController {
                 print("data is : \n\n\n")
                 print(data)
             }
-        }
+        })
+        */
         
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -15,10 +15,46 @@ class Login {
     func setUsername (username: String) -> Bool {
         self.username = username
         
-        return (self.username != nil) ? true : false
+        return (self.username != nil)
     }
     
-    func getUsername () -> String? {
-        return self.username
+    func setPassword (password: String) -> Bool {
+        self.password = password
+        
+        return (self.password != nil)
+    }
+    
+    func getCredentials () -> AnyObject {
+        let username = self.username!
+        let password = self.password!
+        
+        let dict: Dictionary = [
+            "username": username,
+            "password": password
+        ]
+        
+        return dict
+    }
+    
+    func sendCredentials (callback: (String, String?) -> Void) -> Bool {
+        let credentials: AnyObject = self.getCredentials()
+        let app_id : String = "homio"
+        
+        let json: [AnyObject] = [
+            [
+                "username": credentials["username"] as! String,
+                "password": credentials["password"] as! String,
+                "app_id": app_id
+            ]
+        ]
+        
+        let http = HTTP(url: "http://localhost/homio/login")
+        
+        http.post(
+            json,
+            callback: callback
+        )
+        
+        return true
     }
 }
