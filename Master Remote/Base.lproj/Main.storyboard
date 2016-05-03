@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3RR-jd-9MX">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -203,11 +203,85 @@
                         <outlet property="password" destination="KFq-fr-2XL" id="t5R-HG-gma"/>
                         <outlet property="successMessage" destination="tj9-EY-IEo" id="lpW-oK-SNz"/>
                         <outlet property="username" destination="c0d-fm-GT3" id="d3S-rc-GG5"/>
+                        <segue destination="3RR-jd-9MX" kind="show" id="G8N-sT-Ohe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288" y="402"/>
+        </scene>
+        <!--Add Device-->
+        <scene sceneID="tP1-ph-eRC">
+            <objects>
+                <viewController id="PAa-PG-Bxe" customClass="Menu" customModule="Master_Remote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5VY-G6-Odm"/>
+                        <viewControllerLayoutGuide type="bottom" id="KcV-O3-AGC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f01-i1-P4N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGt-um-9Ea">
+                                <rect key="frame" x="281" y="243" width="39" height="30"/>
+                                <state key="normal" title="NEST"/>
+                                <connections>
+                                    <action selector="NEST:" destination="PAa-PG-Bxe" eventType="touchUpInside" id="rfy-nS-O4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Device" id="BmU-r3-zUP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DQR-Ik-VDd">
+                            <connections>
+                                <segue destination="Zgs-pZ-orN" kind="show" id="rNG-JO-ZlC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="CZh-pw-Tsv" kind="show" identifier="toNest" id="S2D-ZB-Cfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4B-P4-Sxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="1124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VpJ-Iy-Q6h">
+            <objects>
+                <viewController id="CZh-pw-Tsv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OVl-Oe-hDF"/>
+                        <viewControllerLayoutGuide type="bottom" id="NbE-GB-u2k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kul-kR-y0b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fvt-Nr-kdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="1883"/>
+        </scene>
+        <!--Add Device-->
+        <scene sceneID="rl0-iH-FYo">
+            <objects>
+                <viewController id="Zgs-pZ-orN" customClass="AddDevice" customModule="Master_Remote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Udp-SA-aqC"/>
+                        <viewControllerLayoutGuide type="bottom" id="BXk-h6-sdI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NHj-Cf-tab">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mml-oI-c1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="1124"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ZEL-bX-0uJ">
@@ -548,6 +622,17 @@
                                 <exclude reference="cBY-9b-6Cn"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0RN-RV-q9v"/>
+                                <exclude reference="M9A-ms-G9t"/>
+                                <exclude reference="TBC-NF-xE7"/>
+                                <exclude reference="Qc0-ew-sUX"/>
+                                <exclude reference="TJj-6e-nhd"/>
+                                <exclude reference="XcJ-pa-2TN"/>
+                                <exclude reference="ffK-06-Z3c"/>
+                                <exclude reference="fms-3T-LJp"/>
+                                <exclude reference="ubj-CM-xLN"/>
+                                <exclude reference="ftE-yg-CSj"/>
+                                <exclude reference="tvp-tY-ARa"/>
                                 <exclude reference="K9L-P2-Ysh"/>
                                 <exclude reference="yGi-8B-yRj"/>
                                 <exclude reference="Dg9-A5-XDs"/>
@@ -562,17 +647,6 @@
                                 <exclude reference="1ll-UR-nA3"/>
                                 <exclude reference="3eg-Fq-21H"/>
                                 <exclude reference="rer-g0-gYK"/>
-                                <exclude reference="Qc0-ew-sUX"/>
-                                <exclude reference="TJj-6e-nhd"/>
-                                <exclude reference="XcJ-pa-2TN"/>
-                                <exclude reference="ffK-06-Z3c"/>
-                                <exclude reference="fms-3T-LJp"/>
-                                <exclude reference="ubj-CM-xLN"/>
-                                <exclude reference="ftE-yg-CSj"/>
-                                <exclude reference="tvp-tY-ARa"/>
-                                <exclude reference="0RN-RV-q9v"/>
-                                <exclude reference="M9A-ms-G9t"/>
-                                <exclude reference="TBC-NF-xE7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -587,6 +661,17 @@
                                 <include reference="cBY-9b-6Cn"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="0RN-RV-q9v"/>
+                                <include reference="M9A-ms-G9t"/>
+                                <include reference="TBC-NF-xE7"/>
+                                <include reference="Qc0-ew-sUX"/>
+                                <include reference="TJj-6e-nhd"/>
+                                <include reference="XcJ-pa-2TN"/>
+                                <include reference="ffK-06-Z3c"/>
+                                <include reference="fms-3T-LJp"/>
+                                <include reference="ubj-CM-xLN"/>
+                                <include reference="ftE-yg-CSj"/>
+                                <include reference="tvp-tY-ARa"/>
                                 <include reference="K9L-P2-Ysh"/>
                                 <include reference="yGi-8B-yRj"/>
                                 <include reference="Dg9-A5-XDs"/>
@@ -601,24 +686,31 @@
                                 <include reference="1ll-UR-nA3"/>
                                 <include reference="3eg-Fq-21H"/>
                                 <include reference="rer-g0-gYK"/>
-                                <include reference="Qc0-ew-sUX"/>
-                                <include reference="TJj-6e-nhd"/>
-                                <include reference="XcJ-pa-2TN"/>
-                                <include reference="ffK-06-Z3c"/>
-                                <include reference="fms-3T-LJp"/>
-                                <include reference="ubj-CM-xLN"/>
-                                <include reference="ftE-yg-CSj"/>
-                                <include reference="tvp-tY-ARa"/>
-                                <include reference="0RN-RV-q9v"/>
-                                <include reference="M9A-ms-G9t"/>
-                                <include reference="TBC-NF-xE7"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEF-Xn-iaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102.5" y="402"/>
+            <point key="canvasLocation" x="1100" y="402"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zni-FB-xu4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3RR-jd-9MX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ias-qF-VAd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PAa-PG-Bxe" kind="relationship" relationship="rootViewController" id="9fj-ww-Hhu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="us6-Nv-sdy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="1124"/>
         </scene>
     </scenes>
 </document>

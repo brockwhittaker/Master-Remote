@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Master RemoteTests/SwiftHTTP.framework"
+  install_framework "Pods-Master RemoteTests/JSONModel.framework"
+  install_framework "Pods-Master RemoteTests/NestSDK.framework"
+  install_framework "Pods-Master RemoteTests/SSKeychain.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Master RemoteTests/SwiftHTTP.framework"
+  install_framework "Pods-Master RemoteTests/JSONModel.framework"
+  install_framework "Pods-Master RemoteTests/NestSDK.framework"
+  install_framework "Pods-Master RemoteTests/SSKeychain.framework"
 fi

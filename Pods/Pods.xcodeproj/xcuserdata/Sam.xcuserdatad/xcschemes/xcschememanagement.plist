@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NestSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Master Remote.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Master RemoteTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Master RemoteUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>07AFE8A4ED1AFF6C9F9C7FEEFEE6B214</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0BF8569A1D17D47E1A86EB020383E8D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6625B658D95BF27ED578E42187144148</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>721A3E31BA8218DC7FADD5DA7CEF2791</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC07253B5A293B98DF1142A475FCCD9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D03C80C401C8B55FBD71D6741B88BBB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E489C9B6BA140154E865D9D50ACE35D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
