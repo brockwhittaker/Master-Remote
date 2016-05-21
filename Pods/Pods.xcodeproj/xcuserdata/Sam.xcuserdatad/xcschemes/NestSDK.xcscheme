@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A0F1B137625F8053FE69D906'
+               BlueprintIdentifier = 'DBC88D46F02A3CB2428EEF9F'
                BlueprintName = 'NestSDK'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'NestSDK.framework'>

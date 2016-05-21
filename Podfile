@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
 
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.1'
 use_frameworks!
 
 #pod 'SwiftHTTP', '~> 1.0.4'

@@ -10,22 +10,104 @@ import UIKit
 import NestSDK
 
 class AddDevice: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let connectWithNestButton = NestSDKConnectWithNestButton(frame: CGRectMake(0, 0, 200, 44))
-        
-        // Optional: Place the button in the center of your view.
-        connectWithNestButton.center = self.view.center
-        view.addSubview(connectWithNestButton)
-        // Do any additional setup after loading the view.
-        
+    
+    // Outlet to the ConnectNest Button
+    @IBOutlet weak var connectNest: NestSDKConnectWithNestButton!
+    
+    var deviceObserverHandles: Array<NestSDKObserverHandle> = []
+    var dataManager: NestSDKDataManager = NestSDKDataManager()
+    var structuresObserverHandle: NestSDKObserverHandle = 0
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        //Checks if user is logged in through access token
         if (NestSDKAccessToken.currentAccessToken() != nil) {
-            print("Authorized!")
+            observeStructures()
+        }
+    }
+    
+    func connectNest(connectNest: NestSDKConnectWithNestButton!, didAuthorizeWithResult result: NestSDKAuthorizationManagerAuthorizationResult!, error: NSError!) {
+        if (error != nil) {
+            //Error
+            print("Process error: \(error)")
+            
+        } else if (result.isCancelled) {
+            //User cancels login
+            print("Cancelled")
             
         } else {
-            print("Not authorized!")
+            //User successfully logs in
+            print("Authorized!")
+            
+            observeStructures()
         }
+    }
+    
+    func connectWithNestButtonDidUnauthorize(connectWithNestButton: NestSDKConnectWithNestButton!) {
+        removeObservers()
+    }
+    
+    func observeStructures() {
+        // Cleans up previous observers
+        removeObservers()
+        
+        // Start observing structures
+        structuresObserverHandle = dataManager.observeStructuresWithBlock({
+            structuresArray, error in
+            
+            print("Structures updated!")
+            
+            // Structure may change while observing, so remove all current device observers and then set all new ones
+            self.removeDevicesObservers()
+            
+            // Iterates through all structures and set observers for all device
+            for structure in structuresArray as! [NestSDKStructure] {
+                print("Found structure: \(structure.name)!")
+                
+                self.observeThermostatsWithinStructure(structure)
+                
+            }
+        })
+    }
+    
+    func observeThermostatsWithinStructure(structure: NestSDKStructure) {
+        for thermostatId in structure.thermostats as! [String] {
+            let handle = dataManager.observeThermostatWithId(thermostatId, block: {
+                thermostat, error in
+                
+                if (error != nil) {
+                    print("Error observing thermostat: \(error)")
+                    
+                } else {
+                    print("Thermostat \(thermostat.name) updated! Current temperature in C: \(thermostat.ambientTemperatureC)")
+                }
+            })
+            
+            deviceObserverHandles.append(handle)
+        }
+    }
+    
+    func removeObservers() {
+        removeDevicesObservers();
+        removeStructuresObservers();
+    }
+    
+    func removeDevicesObservers() {
+        for (_, handle) in deviceObserverHandles.enumerate() {
+            dataManager.removeObserverWithHandle(handle);
+        }
+        
+        deviceObserverHandles.removeAll()
+    }
+    
+    func removeStructuresObservers() {
+        dataManager.removeObserverWithHandle(structuresObserverHandle)
+    }
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
     }
 
     override func didReceiveMemoryWarning() {

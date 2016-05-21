@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3RR-jd-9MX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3RR-jd-9MX">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -76,7 +76,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tj9-EY-IEo">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wau-ou-spr">
@@ -222,7 +222,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGt-um-9Ea">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGt-um-9Ea">
                                 <rect key="frame" x="281" y="243" width="39" height="30"/>
                                 <state key="normal" title="NEST"/>
                                 <connections>
@@ -231,6 +231,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xGt-um-9Ea" firstAttribute="top" secondItem="5VY-G6-Odm" secondAttribute="bottom" constant="179" id="RTV-ct-JZZ"/>
+                            <constraint firstItem="xGt-um-9Ea" firstAttribute="centerX" secondItem="f01-i1-P4N" secondAttribute="centerX" id="biE-JE-P4W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Device" id="BmU-r3-zUP">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DQR-Ik-VDd">
@@ -247,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="1100" y="1124"/>
         </scene>
-        <!--View Controller-->
+        <!--Climate-->
         <scene sceneID="VpJ-Iy-Q6h">
             <objects>
-                <viewController id="CZh-pw-Tsv" sceneMemberID="viewController">
+                <viewController id="CZh-pw-Tsv" customClass="Climate" customModule="Master_Remote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OVl-Oe-hDF"/>
                         <viewControllerLayoutGuide type="bottom" id="NbE-GB-u2k"/>
@@ -258,8 +262,35 @@
                     <view key="view" contentMode="scaleToFill" id="kul-kR-y0b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEST CLIMATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Viz-dV-DuY">
+                                <rect key="frame" x="242" y="159" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-TZ-CFf">
+                                <rect key="frame" x="70" y="236" width="460" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRa-TZ-CFf" firstAttribute="leading" secondItem="kul-kR-y0b" secondAttribute="leadingMargin" constant="50" id="0x3-Bg-SdM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IRa-TZ-CFf" secondAttribute="trailing" constant="50" id="2Fm-Sq-kGj"/>
+                            <constraint firstItem="NbE-GB-u2k" firstAttribute="top" secondItem="IRa-TZ-CFf" secondAttribute="bottom" constant="236" id="6WP-Tg-u9I"/>
+                            <constraint firstItem="IRa-TZ-CFf" firstAttribute="centerX" secondItem="Viz-dV-DuY" secondAttribute="centerX" id="JCf-AL-bXD"/>
+                            <constraint firstItem="Viz-dV-DuY" firstAttribute="top" secondItem="OVl-Oe-hDF" secondAttribute="bottom" constant="95" id="aKo-Iw-Xlf"/>
+                            <constraint firstItem="Viz-dV-DuY" firstAttribute="centerX" secondItem="kul-kR-y0b" secondAttribute="centerX" id="aLp-Lt-2yu"/>
+                            <constraint firstItem="IRa-TZ-CFf" firstAttribute="top" secondItem="Viz-dV-DuY" secondAttribute="bottom" constant="56" id="hNn-Hc-I5n"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nestClimateInfo" destination="IRa-TZ-CFf" id="ebH-dz-p9G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvt-Nr-kdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,8 +307,21 @@
                     <view key="view" contentMode="scaleToFill" id="NHj-Cf-tab">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-eF-Ama" customClass="NestSDKConnectWithNestButton">
+                                <rect key="frame" x="235" y="205" width="130" height="30"/>
+                                <state key="normal" title="Connect With Nest"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7QM-eF-Ama" firstAttribute="centerX" secondItem="NHj-Cf-tab" secondAttribute="centerX" id="lMt-9N-H1h"/>
+                            <constraint firstItem="7QM-eF-Ama" firstAttribute="top" secondItem="Udp-SA-aqC" secondAttribute="bottom" constant="141" id="lPr-fB-d8x"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="connectNest" destination="7QM-eF-Ama" id="Jyp-0K-ACs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mml-oI-c1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

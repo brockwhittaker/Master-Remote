@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NestProductID</key>
+	<string>fd42003b-7310-4bd3-a4b2-eba06b44149a</string>
+	<key>NestProductSecret</key>
+	<string>ylnX1bCrwPg7zOQksUIbhpSEg</string>
+	<key>NestRedirectURL</key>
+	<string>https://example.com</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

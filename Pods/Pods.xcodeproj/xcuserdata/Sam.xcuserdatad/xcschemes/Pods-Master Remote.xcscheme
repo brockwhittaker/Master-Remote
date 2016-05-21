@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '56F812D40FDFAC83276AA157'
+               BlueprintIdentifier = 'BB80192411CD2A419CD04597'
                BlueprintName = 'Pods-Master Remote'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Master_Remote.framework'>
