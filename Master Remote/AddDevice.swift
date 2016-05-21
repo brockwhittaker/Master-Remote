@@ -88,11 +88,13 @@ class AddDevice: UIViewController {
     }
     
     func removeObservers() {
+        //Remove all Observers
         removeDevicesObservers();
         removeStructuresObservers();
     }
     
     func removeDevicesObservers() {
+        //Remove Device Observers
         for (_, handle) in deviceObserverHandles.enumerate() {
             dataManager.removeObserverWithHandle(handle);
         }
@@ -101,6 +103,7 @@ class AddDevice: UIViewController {
     }
     
     func removeStructuresObservers() {
+        //Remove Structure Observers
         dataManager.removeObserverWithHandle(structuresObserverHandle)
     }
 
